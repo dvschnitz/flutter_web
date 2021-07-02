@@ -52,31 +52,33 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ListView(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 16.0),
-            child: Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'You have pushed the button this many times:',
-                ),
-                Text(
-                  '$_counter',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-              ],
+      body: Scrollbar(
+        child: ListView(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 16.0),
+              child: Column(
+                // mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    'You have pushed the button this many times:',
+                  ),
+                  Text(
+                    '$_counter',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
+                ],
+              ),
             ),
-          ),
 
-          for (var item in items) Container(
+            for (var item in items) Container(
 
-            child: Text(item, textAlign: TextAlign.center),
-            margin: EdgeInsets.all(24.0),
-            alignment: Alignment.center
-          )
-        ]
+              child: Text(item, textAlign: TextAlign.center),
+              margin: EdgeInsets.all(24.0),
+              alignment: Alignment.center
+            )
+          ]
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
