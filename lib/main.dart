@@ -38,7 +38,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  List items = ['This', 'is', 'a', 'mother', 'flipping', 'test.', 'I', 'came', 'here', 'to', 'drink', 'milk', 'and', 'kick', 'ass', 'and', 'I', 'just', 'finished', 'my', 'milk!'];
+  List items = ['This', 'is', 'a', 'mother', 'flipping', 'test.', 'I', 'came', 'here', 'to', 'drink',
+    'milk', 'and', 'kick', 'ass', 'and', 'I', 'just', 'finished', 'my', 'milk!',
+    'This', 'is', 'a', 'mother', 'flipping', 'test.', 'I', 'came', 'here', 'to', 'drink', 'milk', 'and', 'kick', 'ass', 'and', 'I', 'just', 'finished', 'my', 'milk!'];
 
   void _incrementCounter() {
     setState(() {
